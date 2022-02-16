@@ -7,7 +7,7 @@ Created on Wed Feb 16 00:31:24 2022
 """
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Stack class
-class Stack:
+class Stack():
     def __init__(self, size):
         self.stack = []
         self.size = size
@@ -68,7 +68,7 @@ def getPrecedence(c):
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # infix to postfix
-def toPostfix(expression):
+def in_to_post(expression):
     result = ""
 
     stack = Stack(15)
@@ -122,7 +122,7 @@ infixExps = [
 ]
 
 for exp in infixExps:
-    postfix = toPostfix(exp)
+    postfix = in_to_post(exp)
     print(f'Infix: {exp} -> Postfix: {postfix}') 
 
 
