@@ -8,6 +8,7 @@ Created on Wed Feb 16 00:31:24 2022
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Stack class
 class Stack():
+    
     def __init__(self, size):
         self.stack = []
         self.size = size
